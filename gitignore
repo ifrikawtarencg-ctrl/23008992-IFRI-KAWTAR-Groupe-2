@@ -1,0 +1,65 @@
+# ============================================
+# .gitignore - Projet ML Finance (ENCG Settat S7)
+# ============================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Jupyter / Colab ---
+# (le notebook .ipynb lui-même DOIT être versionné)
+.ipynb_checkpoints/
+
+# --- Environnements virtuels ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Secrets (aucune clé d'API dans le dépôt) ---
+.env
+*.key
+secrets.*
+credentials.json
+
+# --- Fichiers système ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Éditeurs / IDE ---
+.vscode/
+.idea/
+
+# --- Fichiers temporaires LaTeX (rapport .tex facultatif) ---
+# (les .tex et .pdf finaux DOIVENT être versionnés)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# --- Fichiers temporaires Office ---
+~$*
+.~lock.*
+
+# --- Données ---
+# Les données de data/raw/ sont à versionner si la licence l'autorise
+# et si elles sont légères. Si elles sont trop volumineuses ou non
+# redistribuables, décommente la ligne ci-dessous et garde seulement
+# le script / la notice de téléchargement :
+# data/raw/*
+# !data/raw/README.md
+# !data/raw/*.py
+
+# --- NE PAS ignorer (livrables obligatoires) ---
+# *.pdf  -> rapport/rapport.pdf, presentation/presentation.pdf
+# *.mp4  -> video/demonstration.mp4
+# *.png  -> figures/
+# *.pptx -> presentation/presentation.pptx
